@@ -20,8 +20,31 @@
     box-sizing: border-box;
 }
 
-html {
-    scroll-behavior: smooth;
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  max-width: 100% !important;
+  overflow-x: hidden !important;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* Permitir scroll horizontal ÚNICAMENTE en las galerías de videos */
+.video-carousel, .clips-scroll-container, .grid-vertical-videos {
+  overflow-x: auto !important;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Corregir el contenedor de canales para que no empuje el viewport */
+.channels-grid, section[class*="medios"], .medios-container {
+  max-width: 100% !important;
+  overflow: hidden !important;
+  padding-inline: 16px !important;
+  box-sizing: border-box !important;
 }
 
 section {
@@ -33,7 +56,6 @@ body {
     color: var(--text-dark);
     font-family: var(--font-sans);
     line-height: 1.5;
-    overflow-x: hidden;
 }
 
 /* TYPOGRAPHY & TAGS */
@@ -314,9 +336,9 @@ body {
 
 /* INTERACTIVE PREVIEW REEL (3D TILT) */
 .preview-mockup {
-    aspect-ratio: 9/16;
+    aspect-ratio: 9 / 19.5;
     background: #000;
-    border-radius: 32px;
+    border-radius: 40px;
     padding: 8px;
     position: relative;
     box-shadow: 0 24px 48px rgba(0,0,0,0.2);
@@ -347,9 +369,9 @@ body {
 
 .preview-overlay {
     position: absolute;
-    bottom: 24px;
-    left: 0;
-    width: 100%;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     justify-content: center;
     z-index: 20;
@@ -526,9 +548,9 @@ body {
 }
 
 .video-container {
-    aspect-ratio: 9/16;
+    aspect-ratio: 9 / 19.5;
     width: 100%;
-    border-radius: 32px;
+    border-radius: 40px;
     overflow: hidden;
     background: #111;
     padding: 8px;
@@ -561,7 +583,10 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 24px;
+    object-position: center;
+    border-radius: 32px; /* 40px - 8px */
+    display: block;
+    transform: scale(1.01);
 }
 
 .volume-toggle {
@@ -1007,42 +1032,64 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-top: 96px;
+        padding-bottom: 32px;
         padding-inline: 20px;
-        padding-top: 100px;
     }
     
     .hero-left h1 {
-        font-size: clamp(2.4rem, 11vw, 3.2rem);
+        font-size: clamp(2.2rem, 9vw, 2.8rem);
+        line-height: 1;
+        letter-spacing: -0.02em;
         text-align: center;
         margin: 0 auto;
     }
     
     .hero-left h2 {
+        font-size: 1.1rem;
+        opacity: 0.8;
         text-align: center;
-        margin: 6px auto 16px;
+        margin: 6px auto 12px auto;
     }
     
     .timecode-bar {
-        margin: 0 auto 16px;
+        margin: 0 auto 16px auto;
         justify-content: center;
+        width: fit-content;
     }
     
-    .hero-context,
-    .hero-stack {
+    .hero-context {
+        font-size: 0.95rem;
+        line-height: 1.45;
+        max-width: 320px;
         text-align: center;
-        max-width: 90%;
-        margin: 0 auto 24px;
+        margin: 0 auto 12px auto;
+        opacity: 0.9;
+    }
+    
+    .hero-stack {
+        font-size: 0.75rem;
+        letter-spacing: 0.05em;
+        text-align: center;
+        margin: 0 auto 24px auto;
+        opacity: 0.6;
     }
     
     .hero-right {
         margin: 0 auto;
-        width: 88vw;
-        max-width: 320px;
+        width: 100%;
+        max-width: 290px;
         height: auto;
     }
     
     .preview-mockup {
-        margin-bottom: 48px;
+        width: 100%;
+        aspect-ratio: 9 / 19.5;
+        border-radius: 36px;
+    }
+    
+    .card-video {
+        border-radius: 28px;
     }
 }
 
