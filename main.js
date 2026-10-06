@@ -117,7 +117,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 const newSrc = this.getAttribute('data-vid');
                 if (newSrc && heroPreviewVideo.src !== newSrc) {
                     heroPreviewVideo.src = newSrc;
-                    heroPreviewVideo.play();
+                    heroPreviewVideo.muted = true;
+                    heroPreviewVideo.play().catch(e => console.log(e));
                 }
             });
         });
