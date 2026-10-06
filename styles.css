@@ -1022,6 +1022,7 @@ body {
 @media (max-width: 768px) {
     .grid-staggered {
         display: flex;
+        justify-content: center;
         overflow-x: auto !important;
         scroll-snap-type: x mandatory;
         gap: 16px;
@@ -1061,7 +1062,7 @@ body {
         letter-spacing: -0.02em;
         text-align: center;
         margin-top: 24px !important;
-        margin-bottom: 8px !important;
+        margin-bottom: 24px !important;
         margin-inline: auto;
         display: block;
     }
@@ -1070,7 +1071,7 @@ body {
         font-size: 1.1rem;
         opacity: 0.8;
         text-align: center;
-        margin: 6px auto 12px auto;
+        margin: 6px auto 16px auto;
     }
     
     .timecode-container {
@@ -1082,7 +1083,7 @@ body {
         line-height: 1.45;
         max-width: 320px;
         text-align: center;
-        margin: 0 auto 12px auto;
+        margin: 0 auto 24px auto;
         opacity: 0.9;
     }
     
@@ -1090,7 +1091,7 @@ body {
         font-size: 0.75rem;
         letter-spacing: 0.05em;
         text-align: center;
-        margin: 0 auto 24px auto;
+        margin: 0 auto 32px auto;
         opacity: 0.6;
     }
     
@@ -1105,6 +1106,10 @@ body {
         width: 100%;
         aspect-ratio: 9 / 19.5;
         border-radius: 36px;
+        transform-style: flat !important;
+        will-change: auto !important;
+        perspective: none !important;
+        transform: none !important;
     }
     
     .card-video {
