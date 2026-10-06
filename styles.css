@@ -551,7 +551,6 @@ body {
     aspect-ratio: 9 / 19.5;
     width: 100%;
     border-radius: 40px;
-    overflow: hidden;
     background: #111;
     padding: 8px;
     position: relative;
@@ -559,6 +558,9 @@ body {
     align-items: center;
     justify-content: center;
     transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), filter 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+    /* fix for safari border radius clip */
+    -webkit-mask-image: -webkit-radial-gradient(white, black);
+    isolation: isolate;
 }
 
 .interactive-card:hover .video-container {
@@ -1019,8 +1021,20 @@ body {
 
 @media (max-width: 768px) {
     .grid-staggered {
-        grid-template-columns: 1fr;
+        display: flex;
+        overflow-x: auto !important;
+        scroll-snap-type: x mandatory;
+        gap: 16px;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 24px;
+        margin-inline: -16px;
+        padding-inline: 16px;
     }
+    
+    .grid-staggered::-webkit-scrollbar {
+        display: none;
+    }
+    
     .stagger-1, .stagger-2 {
         transform: none;
         margin-bottom: 0;
