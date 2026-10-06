@@ -1,0 +1,5 @@
+node_modules/
+optimizar_videos.ps1
+convert_images.js
+*.temp.mp4
+.DS_Store
