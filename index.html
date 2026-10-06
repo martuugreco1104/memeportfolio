@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfolio de Esmeralda Demitrio Ego. Editora Audiovisual y Productora.">
-    <title>Esmeralda Demitrio | Editora Audiovisual</title>
+    <meta name="description" content="Portfolio de Esmeralda Demitrio, editora audiovisual especializada en streaming, clips, vlogs y contenido comercial.">
+    <title>Esmeralda Demitrio — Editora Audiovisual</title>
     <!-- Importing modern font Plus Jakarta Sans -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,251 +21,371 @@
         <nav class="floating-navbar">
             <div class="nav-left">ESMERALDA DEMITRIO</div>
             <div class="nav-center">
-                <a href="#streaming" class="nav-link">Stream</a>
-                <a href="#mundial" class="nav-link">Mundial</a>
-                <a href="#vlogs" class="nav-link">Vlogs</a>
-                <a href="#comerciales" class="nav-link">Comerciales</a>
+                <a href="#trabajos" class="nav-link">TRABAJOS</a>
+                <a href="#sobre-mi" class="nav-link">SOBRE MÍ</a>
+                <a href="#servicios" class="nav-link">SERVICIOS</a>
+                <a href="#contacto" class="nav-link">CONTACTO</a>
             </div>
             <div class="nav-right">
-                <a href="mailto:eteresmeralda@gmail.com" class="nav-btn">Contactar</a>
+                <a href="mailto:eteresmeralda@gmail.com" class="nav-btn">CONTACTO ↗</a>
             </div>
         </nav>
 
         <!-- =========================================
-             HERO SECTION (SPLIT 50/50)
+             HERO SECTION
+             ========================================= -->
+        
+        <!-- =========================================
+             HERO SECTION (SPLIT)
              ========================================= -->
         <header class="hero-split">
             <div class="hero-grid-split">
                 <!-- COLUMNA IZQUIERDA -->
                 <div class="hero-left">
-                    <h1 class="hero-identity" style="position: relative;">
-                        <svg class="sparkle sparkle-orange" style="top: -20px; left: -30px; width: 36px; height: 36px; animation-delay: 0s;" viewBox="0 0 100 100"><path d="M50 0 C50 40 60 50 100 50 C60 50 50 60 50 100 C50 60 40 50 0 50 C40 50 50 40 50 0 Z" fill="currentColor"/></svg>
-                        <svg class="sparkle sparkle-lime" style="bottom: 10px; right: 20px; width: 24px; height: 24px; animation-delay: 0.5s;" viewBox="0 0 100 100"><path d="M50 0 C50 40 60 50 100 50 C60 50 50 60 50 100 C50 60 40 50 0 50 C40 50 50 40 50 0 Z" fill="currentColor"/></svg>
-                        <span class="name-colossal">ESMERALDA</span>
-                        <span class="name-secondary">DEMITRIO EGO</span>
+                    <h1 class="hero-brand-title">
+                        <span class="brand-first">ESMERALDA</span>
+                        <span class="brand-last">DEMITRIO EGO</span>
                     </h1>
+                    <div class="hero-role-tag">EDITORA AUDIOVISUAL · POSTPRODUCCIÓN</div>
                     
-                    <div class="timecode-container">
-                        <div class="timecode-bar">
-                            <div class="timecode-playhead"></div>
-                        </div>
-                        <div class="timecode-text">00:00:00:00</div>
-                    </div>
+                    
+                        
 
-                    <p class="hero-context">
-                        Editora audiovisual. Edición ágil para canales y creadores. Velocidad de streaming, criterio de remate y retención real. Flujo de entrega diaria en LUZU TV, experiencia en Solo Streaming, vlogs y video producto.
+                    
+                    <p class="hero-context" style="margin-top: 0;">
+                        Edición audiovisual para streaming, creadores y marcas. Ritmo, narrativa y movimiento pensados para retener.
                     </p>
                     
-                    <div class="hero-stack">
-                        PREMIERE PRO · AFTER EFFECTS · DAVINCI RESOLVE · PHOTOSHOP · CAPCUT
+                    <div class="hero-actions" style="margin-top: 32px;">
+                        <a href="mailto:eteresmeralda@gmail.com" class="btn-primary">CONTACTO ↗</a>
+                        <a href="#trabajos" class="btn-secondary" style="border-color: var(--accent-lime); color: var(--accent-lime);">VER TRABAJOS</a>
                     </div>
                 </div>
 
-                <!-- COLUMNA DERECHA: Preview Reel -->
+                
+                
+                <!-- COLUMNA DERECHA: Carousel 3D -->
                 <div class="hero-right" style="position: relative;">
-                    <svg class="sparkle sparkle-white" style="top: -15px; right: -15px; width: 30px; height: 30px; animation-delay: 1s;" viewBox="0 0 100 100"><path d="M50 0 C50 40 60 50 100 50 C60 50 50 60 50 100 C50 60 40 50 0 50 C40 50 50 40 50 0 Z" fill="currentColor"/></svg>
-                    <svg class="sparkle sparkle-orange" style="bottom: 20%; left: -25px; width: 20px; height: 20px; animation-delay: 1.5s;" viewBox="0 0 100 100"><path d="M50 0 C50 40 60 50 100 50 C60 50 50 60 50 100 C50 60 40 50 0 50 C40 50 50 40 50 0 Z" fill="currentColor"/></svg>
-                    <div class="video-container preview-mockup">
-                        <div class="mockup-glare"></div>
-                        <video id="heroPreviewVideo" class="card-video" src="assets/clips/nadie_dice_nada_hero.mp4" poster="assets/clips/nadie_dice_nada_hero_poster.jpg" autoplay muted loop playsinline webkit-playsinline preload="auto"></video>
-                        <div class="preview-overlay">
-                            <div class="preview-labels">
-                                <button class="preview-label active" data-vid="assets/clips/nadie_dice_nada_hero.mp4">Stream</button>
-                                <button class="preview-label" data-vid="assets/vlogs/movil_solo.mp4">Vlog</button>
-                                <button class="preview-label" data-vid="assets/reels/CHIVO TURRO.mp4">Comercial</button>
+                    <div class="hero-3d-stage">
+                        <div class="carousel-3d-track">
+                            <!-- Card 1: Stream -->
+                            <div class="card-3d is-active" data-pos="0">
+                            <video src="assets/clips/nadie_dice_nada_hero.mp4" autoplay muted loop playsinline webkit-playsinline></video>
+                            <span class="card-label">STREAM // LUZU</span>
+                            </div>
+                            <!-- Card 2: Vlog -->
+                            <div class="card-3d is-next" data-pos="1">
+                            <video src="assets/vlogs/movil_solo.mp4" autoplay muted loop playsinline webkit-playsinline></video>
+                            <span class="card-label">VLOG // CALLE</span>
+                            </div>
+                            <!-- Card 3: Comercial -->
+                            <div class="card-3d is-prev" data-pos="2">
+                            <video src="assets/reels/CHIVO TURRO.mp4" autoplay muted loop playsinline webkit-playsinline></video>
+                            <span class="card-label">COMERCIAL // MARCA</span>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+</div>
         </header>
+
 
         <main class="main-content">
             
             <!-- =========================================
                  SECCIÓN 1: STREAM & RETENCIÓN
                  ========================================= -->
-            <section id="streaming">
-                <div class="section-header">
-                    <span class="section-tag">01 // CLIPS STREAM</span>
-                </div>
-                
-                <div class="grid-vertical-videos">
-                    <!-- Clip 1 (Luzu TV) -->
-                    <div class="interactive-card">
-                        <div class="video-container">
-                            <video class="card-video" src="assets/clips/LUZU TV/NADIE DICE NADA.mp4#t=0.1" preload="metadata" muted loop playsinline webkit-playsinline></video>
-                            <button class="volume-toggle" aria-label="Mute/Unmute">
-                                <svg class="icon-mute" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
-                            </button>
-                        </div>
-                        <div class="card-meta">
-                            <h3 class="meta-title">Nadie Dice Nada</h3>
-                            <p class="meta-subtitle">LUZU TV · Humor / Timing</p>
-                        </div>
-                    </div>
-
-                    <!-- Clip 2 (Solo Streaming) -->
-                    <div class="interactive-card">
-                        <div class="video-container">
-                            <video class="card-video" src="assets/clips/SOLO DEPORTES STREAMING/SOLO CON NIKI.mp4#t=0.1" preload="metadata" muted loop playsinline webkit-playsinline autoplay></video>
-                            <button class="volume-toggle" aria-label="Mute/Unmute">
-                                <svg class="icon-mute" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
-                            </button>
-                        </div>
-                        <div class="card-meta">
-                            <h3 class="meta-title">Solo Streaming</h3>
-                            <p class="meta-subtitle">SOLO DEPORTES · Animación Gráfica</p>
-                        </div>
-                    </div>
-
-                    <!-- Clip 3 (Luzu TV) -->
-                    <div class="interactive-card">
-                        <div class="video-container">
-                            <video class="card-video" src="assets/clips/video3.mp4#t=0.1" preload="metadata" muted loop playsinline webkit-playsinline></video>
-                            <button class="volume-toggle" aria-label="Mute/Unmute">
-                                <svg class="icon-mute" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
-                            </button>
-                        </div>
-                        <div class="card-meta">
-                            <h3 class="meta-title">LOS DEL FONDO - Luzu TV</h3>
-                            <p class="meta-subtitle">LUZU TV</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
+            
             <!-- =========================================
-                 SECCIÓN 2: MUNDIAL 2026
+                 SECCIÓN: TRABAJOS DESTACADOS
                  ========================================= -->
-            <section id="mundial" style="position: relative;">
-                <div class="section-header" style="position: relative; display: inline-block;">
-                    <svg class="sparkle sparkle-orange" style="top: -10px; right: -30px; width: 24px; height: 24px; animation-delay: 0.2s;" viewBox="0 0 100 100"><path d="M50 0 C50 40 60 50 100 50 C60 50 50 60 50 100 C50 60 40 50 0 50 C40 50 50 40 50 0 Z" fill="currentColor"/></svg>
-                    <span class="section-tag">02 // COBERTURA MUNDIAL 2026 — MIAMI</span>
-                    <p class="section-subtitle" style="margin-top: 0.5rem; color: var(--text-muted); font-size: 0.95rem; font-weight: 500;">
-                        Edición de capítulos y contenido de 'Así Somos' para LUZU TV durante la cobertura presencial en Miami.
-                    </p>
+            <section id="trabajos" class="portfolio-section">
+                <div class="section-intro">
+                    <h2 class="section-main-title" style="color: var(--bg-hero);">TRABAJOS DESTACADOS</h2>
+                    <p class="section-subtitle">Una selección de proyectos de streaming, clips, cobertura y contenido comercial.</p>
                 </div>
                 
-                <!-- YT Thumbnails -->
-                <div class="grid-youtube" style="position: relative;">
-                    <!-- YT 1 -->
-                    <div class="yt-card yt-inline-player" data-video-id="Nc_XKmkXpuA">
-                        <img src="https://img.youtube.com/vi/Nc_XKmkXpuA/maxresdefault.jpg" alt="Nico y el Mito entran la pelota a la cancha" class="yt-thumb">
-                        <div class="yt-play">
-                            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                <!-- COBERTURA MUNDIAL 2026 -->
+                <div class="project-showcase highlight-project">
+                    <div class="project-header">
+                        <span class="project-number">01</span>
+                        <div class="project-titles">
+                            <h3 class="project-title">MUNDIAL 2026</h3>
+                            <span class="project-client">MIAMI · LUZU TV</span>
                         </div>
+                        <span class="project-category">COBERTURA / VLOGS</span>
                     </div>
                     
-                    <!-- YT 2 -->
-                    <div class="yt-card yt-inline-player" data-video-id="w5YByJifAnw">
-                        <img src="https://img.youtube.com/vi/w5YByJifAnw/maxresdefault.jpg" alt="Fulbito de parecidos" class="yt-thumb">
-                        <div class="yt-play">
-                            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                    
+                    <div class="project-media" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 24px;">
+                        <iframe style="width: 100%; aspect-ratio: 16/9; border-radius: 12px;" src="https://www.youtube.com/embed/Nc_XKmkXpuA?si=qNw-cRH00mex-yi7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe style="width: 100%; aspect-ratio: 16/9; border-radius: 12px;" src="https://www.youtube.com/embed/w5YByJifAnw?si=r1-exh8OlBtXk-3l" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe style="width: 100%; aspect-ratio: 16/9; border-radius: 12px;" src="https://www.youtube.com/embed/Nvsrdas6ulI?si=0BYN4izEoHkcALwq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+<div class="project-info">
+                        <p class="project-desc">Edición de contenido durante cobertura. Edición audiovisual enfocada en ritmo, narrativa y adaptación al formato.</p>
+                        
+                    </div>
+                </div>
+
+                <!-- CLIPS STREAMING -->
+                <div class="project-showcase">
+                    <div class="project-header">
+                        <span class="project-number">02</span>
+                        <div class="project-titles">
+                            <h3 class="project-title">LUZU TV</h3>
+                            <span class="project-client">LUZU TV</span>
+                        </div>
+                        <span class="project-category">STREAM / CLIPS</span>
+                    </div>
+                    
+                    <div class="project-media grid-vertical-videos">
+                        <div class="interactive-card">
+                            <div class="video-container">
+                                <video class="card-video" src="assets/clips/LUZU TV/NADIE DICE NADA.mp4#t=0.1" preload="metadata" muted loop playsinline webkit-playsinline></video>
+                            <button class="volume-toggle" aria-label="Mute/Unmute">
+                                <svg class="icon-mute" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+                            </button>
+                            </div>
+                        </div>
+                        <div class="interactive-card">
+                            <div class="video-container">
+                                <video class="card-video" src="assets/clips/video3.mp4#t=0.1" preload="metadata" muted loop playsinline webkit-playsinline></video>
+                            <button class="volume-toggle" aria-label="Mute/Unmute">
+                                <svg class="icon-mute" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+                            </button>
+                            </div>
+                        </div>
+                    <div class="interactive-card">
+                            <div class="video-container">
+                                <video class="card-video" src="assets/clips/nadie_dice_nada_hero.mp4#t=0.1" preload="metadata" muted loop playsinline webkit-playsinline></video>
+                            <button class="volume-toggle" aria-label="Mute/Unmute">
+                                <svg class="icon-mute" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+                            </button>
+                            </div>
                         </div>
                     </div>
+<div class="project-info">
+                        <p class="project-desc">Edición de contenido para streaming, con foco en ritmo, timing y selección de momentos.</p>
+                    </div>
+                </div>
 
-                    <!-- YT 3 -->
-                    <div class="yt-card yt-inline-player" data-video-id="Nvsrdas6ulI">
-                        <img src="https://img.youtube.com/vi/Nvsrdas6ulI/maxresdefault.jpg" alt="Miniatura de cobertura mundial" class="yt-thumb">
-                        <div class="yt-play">
-                            <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
+                <!-- SOLO STREAMING -->
+                <div class="project-showcase">
+                    <div class="project-header">
+                        <span class="project-number">03</span>
+                        <div class="project-titles">
+                            <h3 class="project-title">SOLO STREAMING</h3>
+                            <span class="project-client">SOLO DEPORTES</span>
+                        </div>
+                        <span class="project-category">STREAM / VLOG</span>
+                    </div>
+                    
+                    <div class="project-media grid-vertical-videos">
+                        <div class="interactive-card">
+                            <div class="video-container">
+                                <video class="card-video" src="assets/clips/SOLO DEPORTES STREAMING/SOLO CON NIKI.mp4#t=0.1" preload="metadata" muted loop playsinline webkit-playsinline autoplay></video>
+                            <button class="volume-toggle" aria-label="Mute/Unmute">
+                                <svg class="icon-mute" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+                            </button>
+                            </div>
+                        </div>
+                        <div class="interactive-card">
+                            <div class="video-container">
+                                <video class="card-video" src="assets/vlogs/movil_solo.mp4#t=0.1" preload="metadata" muted loop playsinline webkit-playsinline></video>
+                            <button class="volume-toggle" aria-label="Mute/Unmute">
+                                <svg class="icon-mute" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
+                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>
+
+                
+                <div class="double-project-container" style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; margin-bottom: 120px;">
+                    <!-- REELS COMERCIALES -->
+                    <div class="project-showcase" style="margin-bottom: 0; border-top: 1px solid var(--border-soft); padding-top: 40px;">
+                        <div class="project-header">
+                            <span class="project-number">04</span>
+                            <div class="project-titles">
+                                <h3 class="project-title">REELS COMERCIALES</h3>
+                                <span class="project-client">FRÁVEGA</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-media">
+                            <div class="interactive-card" style="margin: 0 auto; width: 100%; max-width: 350px;">
+                                <div class="video-container">
+                                    <video class="card-video" src="assets/reels/CHIVO TURRO.mp4#t=0.1" preload="metadata" muted loop playsinline webkit-playsinline></video>
+                                    <button class="volume-toggle" aria-label="Mute/Unmute"><svg class="icon-mute" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- BACKSTAGE -->
+                    <div class="project-showcase" style="margin-bottom: 0; border-top: 1px solid var(--border-soft); padding-top: 40px;">
+                        <div class="project-header">
+                            <span class="project-number">05</span>
+                            <div class="project-titles">
+                                <h3 class="project-title">BACKSTAGE</h3>
+                                <span class="project-client">BLISTER</span>
+                            </div>
+                        </div>
+                        
+                        <div class="project-media">
+                            <div class="interactive-card" style="margin: 0 auto; width: 100%; max-width: 350px;">
+                                <div class="video-container">
+                                    <video class="card-video" src="assets/vlogs/BACKSTAJE RODAJE BLISTER.MOV#t=0.1" preload="metadata" muted loop playsinline webkit-playsinline></video>
+                                    <button class="volume-toggle" aria-label="Mute/Unmute"><svg class="icon-mute" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </section>
 
+            
             <!-- =========================================
-                 SECCIÓN 3: VLOGS & CALLE
+                 SECCIÓN: MEDIOS Y CANALES
                  ========================================= -->
-            <section id="vlogs" style="position: relative;">
-                <div class="section-header" style="position: relative; display: inline-block;">
-                    <svg class="sparkle sparkle-lime" style="top: -5px; right: -40px; width: 28px; height: 28px; animation-delay: 0.8s;" viewBox="0 0 100 100"><path d="M50 0 C50 40 60 50 100 50 C60 50 50 60 50 100 C50 60 40 50 0 50 C40 50 50 40 50 0 Z" fill="currentColor"/></svg>
-                    <span class="section-tag">03 // MÓVILES-VLOGS-BACKSTAGE</span>
+            <section id="clientes" class="disruptive-section" style="background-color: var(--bg-hero); padding: 100px 24px; border-bottom: 1px solid rgba(255,255,255,0.05);">
+                <div class="section-header" style="text-align: center; margin-bottom: 60px;">
+                    <h2 class="section-main-title" style="color: #ffffff; font-size: clamp(2rem, 5vw, 3rem);">EXPERIENCIA</h2>
+                    <p style="color: rgba(255,255,255,0.6); font-size: 1.1rem; max-width: 600px; margin: 16px auto 0;">Medios, canales y productoras en las que trabajo y confían en mi edición.</p>
                 </div>
                 
-                <div class="grid-vertical-videos grid-center" style="position: relative;">
-                    <!-- Móvil en Calle -->
-                    <div class="interactive-card">
-                        <div class="video-container">
-                            <video class="card-video" src="assets/vlogs/movil_solo.mp4#t=0.1" preload="metadata" muted loop playsinline webkit-playsinline></video>
-                            <button class="volume-toggle" aria-label="Mute/Unmute">
-                                <svg class="icon-mute" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
-                            </button>
+                <div class="grid-clients" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px; max-width: 1100px; margin: 0 auto;">
+                    
+                    <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 24px; padding: 48px 24px; text-align: center; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='rgba(255,255,255,0.06)'" onmouseout="this.style.background='rgba(255,255,255,0.03)'">
+                        <div style="height: 80px; display: flex; align-items: center; justify-content: center; margin-bottom: 24px;">
+                            <img src="assets/logo-luzu-2025.webp" alt="Luzu TV" style="max-height: 100%; max-width: 80%; object-fit: contain; filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));">
                         </div>
-                        <div class="card-meta">
-                            <h3 class="meta-title">Móvil en Calle</h3>
-                            <p class="meta-subtitle">SOLO MAGAZINE · Cobertura Callejera</p>
-                        </div>
+                        <h4 style="color: #fff; font-size: 1.3rem; font-weight: 800; margin: 0; letter-spacing: 0.05em;">LUZU TV</h4>
+                        <p style="color: var(--accent-lime); font-size: 0.9rem; margin-top: 8px; font-weight: 700;">STREAMING</p>
                     </div>
 
-                    <!-- Backstage Blister -->
-                    <div class="interactive-card">
-                        <div class="video-container">
-                            <video class="card-video" src="assets/vlogs/BACKSTAJE RODAJE BLISTER.MOV#t=0.1" preload="metadata" muted loop playsinline webkit-playsinline></video>
-                            <button class="volume-toggle" aria-label="Mute/Unmute">
-                                <svg class="icon-mute" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
-                            </button>
+                    <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 24px; padding: 48px 24px; text-align: center; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='rgba(255,255,255,0.06)'" onmouseout="this.style.background='rgba(255,255,255,0.03)'">
+                        <div style="height: 80px; display: flex; align-items: center; justify-content: center; margin-bottom: 24px;">
+                            <img src="Logos/solo deportes.webp" alt="Solo Deportes" style="height: 80px; width: 80px; object-fit: cover; border-radius: 50%; box-shadow: 0 10px 20px rgba(0,0,0,0.3);">
                         </div>
-                        <div class="card-meta">
-                            <h3 class="meta-title">Backstage Rodaje</h3>
-                            <p class="meta-subtitle">BLISTER · Detrás de Escena</p>
-                        </div>
+                        <h4 style="color: #fff; font-size: 1.3rem; font-weight: 800; margin: 0; letter-spacing: 0.05em;">SOLO DEPORTES</h4>
+                        <p style="color: var(--accent-lime); font-size: 0.9rem; margin-top: 8px; font-weight: 700;">COBERTURA</p>
                     </div>
+
+                    <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 24px; padding: 48px 24px; text-align: center; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='rgba(255,255,255,0.06)'" onmouseout="this.style.background='rgba(255,255,255,0.03)'">
+                        <div style="height: 80px; display: flex; align-items: center; justify-content: center; margin-bottom: 24px;">
+                            <img src="Logos/cervelive.webp" alt="Cervelive" style="height: 80px; width: 80px; object-fit: cover; border-radius: 50%; box-shadow: 0 10px 20px rgba(0,0,0,0.3);">
+                        </div>
+                        <h4 style="color: #fff; font-size: 1.3rem; font-weight: 800; margin: 0; letter-spacing: 0.05em;">CERVELIVE</h4>
+                        <p style="color: var(--accent-lime); font-size: 0.9rem; margin-top: 8px; font-weight: 700;">FORMATOS</p>
+                    </div>
+
                 </div>
-
-
             </section>
 
+
+        
             <!-- =========================================
-                 SECCIÓN 4: COMERCIALES
+                 SECCIÓN: SOBRE MÍ
                  ========================================= -->
-            <section id="comerciales">
-                <div class="section-header">
-                    <span class="section-tag">04 // REELS COMERCIALES</span>
-                    <p class="section-subtitle">
-                        Edición pensada para frenar el scroll en los primeros 2 segundos. Puntos de corte rítmicos, color grading que resalta el producto y adaptación a lenguaje orgánico de TikTok/Reels.
-                    </p>
-                </div>
+            
+            <!-- =========================================
+                 SECCIÓN: SOBRE MÍ
+                 ========================================= -->
+            
+            <!-- =========================================
+                 SECCIÓN: SOBRE MÍ
+                 ========================================= -->
+            
+            <!-- =========================================
+                 SECCIÓN: SOBRE MÍ
+                 ========================================= -->
+            <section id="sobre-mi" class="about-section" style="background-color: transparent; padding: 120px 24px; max-width: 1100px; margin: 0 auto;">
                 
-                <div class="grid-staggered">
-                    <!-- Reel 1 -->
-                    <div class="interactive-card stagger-1">
-                        <div class="video-container">
-                            <video class="card-video" src="assets/reels/CHIVO TURRO.mp4#t=0.1" preload="metadata" muted loop playsinline webkit-playsinline></video>
-                            <button class="volume-toggle" aria-label="Mute/Unmute">
-                                <svg class="icon-mute" viewBox="0 0 24 24"><path d="M16.5 12c0-1.77-1.02-3.29-2.5-4.03v2.21l2.45 2.45c.03-.2.05-.41.05-.63zm2.5 0c0 .94-.2 1.82-.54 2.64l1.51 1.51C20.63 14.91 21 13.5 21 12c0-4.28-2.99-7.86-7-8.77v2.06c2.89.86 5 3.54 5 6.71zM4.27 3L3 4.27 7.73 9H3v6h4l5 5v-6.73l4.25 4.25c-.67.52-1.42.93-2.25 1.18v2.06c1.38-.31 2.63-.95 3.69-1.81L19.73 21 21 19.73l-9-9L4.27 3zM12 4L9.91 6.09 12 8.18V4z"/></svg>
-                            </button>
-                        </div>
-                        <div class="card-meta">
-                            <h3 class="meta-title">Publicidad @turro.marzio</h3>
-                            <p class="meta-subtitle">FRÁVEGA · Comercial / Marca</p>
-                        </div>
+                <div class="about-grid-2col" style="display: grid; gap: 60px; align-items: start;">
+                    
+                    <!-- Left: Text Content -->
+                    <div style="text-align: left;">
+                        
+                        <h2 class="section-main-title" style="color: var(--bg-hero);">SOBRE MÍ</h2>
+                        
+                        <h3 style="font-size: 2.5rem; font-weight: 900; color: #0F3B27; margin-bottom: 8px; line-height: 1.1;">ESMERALDA DEMITRIO</h3>
+                        <div style="font-size: 1.1rem; font-weight: 700; color: var(--accent-orange); margin-bottom: 32px; letter-spacing: 0.05em; text-transform: uppercase;">EDITORA DE VIDEO · BUENOS AIRES</div>
+                        
+                        <ul style="list-style: none; padding: 0; margin: 0 0 40px 0; color: #0A1C13; font-size: 1.15rem; line-height: 1.8; opacity: 0.9;">
+                            <li style="margin-bottom: 16px; display: flex; align-items: flex-start; gap: 12px;">
+                                <span style="color: var(--accent-orange); font-weight: bold; font-size: 1.5rem; line-height: 1;">•</span> 
+                                <span>Edición de formato largo para YouTubers y vlogs</span>
+                            </li>
+                            <li style="margin-bottom: 16px; display: flex; align-items: flex-start; gap: 12px;">
+                                <span style="color: var(--accent-orange); font-weight: bold; font-size: 1.5rem; line-height: 1;">•</span> 
+                                <span>Contenido y recortes para canales de streaming</span>
+                            </li>
+                            <li style="margin-bottom: 16px; display: flex; align-items: flex-start; gap: 12px;">
+                                <span style="color: var(--accent-orange); font-weight: bold; font-size: 1.5rem; line-height: 1;">•</span> 
+                                <span>Formato vertical y piezas para redes</span>
+                            </li>
+                            <li style="margin-bottom: 16px; display: flex; align-items: flex-start; gap: 12px;">
+                                <span style="color: var(--accent-orange); font-weight: bold; font-size: 1.5rem; line-height: 1;">•</span> 
+                                <span>Flujo de entrega diaria y trabajo remoto</span>
+                            </li>
+                        </ul>
+
                     </div>
 
+                    <!-- Right: Photo -->
+                    <div style="position: relative;">
+                        <img src="assets/foto%20sobre%20mi.jpeg" alt="Esmeralda Demitrio" class="about-photo-mobile" style="width: 100%; height: auto; border-radius: 20px; max-width: 320px; margin: 0 auto; box-shadow: 0 20px 40px rgba(0,0,0,0.1); display: block; object-fit: cover;">
+                        <div style="display: flex; justify-content: center; margin-top: 24px;">
+                            <div style="display: inline-flex; align-items: center; gap: 8px; font-size: 0.9rem; font-weight: 700; letter-spacing: 0.05em; color: #0F3B27; background-color: rgba(15, 59, 39, 0.05); padding: 8px 16px; border-radius: 999px;">
+                                <span class="blinking-dot" style="color: #92FF5F; font-size: 1.2rem; line-height: 1;">●</span>
+                                DISPONIBLE PARA NUEVOS PROYECTOS
+                            </div>
+                        </div>
+                        
+                    </div>
 
                 </div>
             </section>
 
+
+
+
             <!-- =========================================
-                 SECCIÓN 5: MEDIOS Y CANALES
+                 SECCIÓN: SERVICIOS
                  ========================================= -->
-            <section id="clientes" class="disruptive-section">
-                <div class="section-header">
-                    <span class="section-tag section-tag-alt">05 // MEDIOS Y CANALES</span>
-                </div>
-                <div class="grid-clients">
-                    <div class="client-card">
-                        <img src="assets/logo-luzu-2025.webp" alt="Luzu TV">
-                        <p>LUZU TV</p>
+            <section id="servicios" class="services-section">
+                <h2 class="section-main-title" style="color: var(--bg-hero);">SERVICIOS</h2>
+                <div class="services-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-top: 48px;">
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"/></svg></div>
+                            <h3 class="service-title">STREAMING</h3>
+                        </div>
+                        <p class="service-desc">Edición de contenido para programas y transmisiones.</p>
                     </div>
-                    <div class="client-card">
-                        <img src="Logos/solo deportes.webp" alt="Solo Deportes" style="border-radius: 50%; width: 48px; height: 48px; object-fit: cover;">
-                        <p>SOLO DEPORTES</p>
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 9h-2V7h-2v5H6v2h2v5h2v-5h2v-2z"/></svg></div>
+                            <h3 class="service-title">CLIPS</h3>
+                        </div>
+                        <p class="service-desc">Selección y edición de momentos para redes.</p>
                     </div>
-                    <div class="client-card">
-                        <img src="Logos/cervelive.webp" alt="Cervelive" style="border-radius: 50%; width: 48px; height: 48px; object-fit: cover;">
-                        <p>CERVELIVE</p>
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M4 6H2v14c0 1.1.9 2 2 2h14v-2H4V6zm16-4H8c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-8 12.5v-9l6 4.5-6 4.5z"/></svg></div>
+                            <h3 class="service-title">VLOGS</h3>
+                        </div>
+                        <p class="service-desc">Edición dinámica y narrativa para contenido digital.</p>
+                    </div>
+                    <div class="service-card">
+                        <div class="service-header">
+                            <div class="service-icon"><svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-9 9H9V9h3V7H9V5h2v2h2v2h-2v3zm4 4h-2v-2h-2v2h-2v-4h6v4z"/></svg></div>
+                            <h3 class="service-title">COMERCIALES</h3>
+                        </div>
+                        <p class="service-desc">Edición de piezas audiovisuales para marcas y productos.</p>
                     </div>
                 </div>
             </section>
@@ -275,19 +395,26 @@
         <!-- =========================================
              FOOTER
              ========================================= -->
-        <footer class="footer-block">
-            <h2 class="footer-title">estoy tomando nuevos trabajos :)</h2>
-            <p class="footer-subtitle">su consulta no molesta</p>
+        
+        <footer id="contacto" class="footer-block">
+            <h2 class="footer-title" style="color: #ffffff;">estoy tomando nuevos trabajos :)</h2>
+            <p class="footer-subtitle">Si necesitás una editora para streaming, clips, contenido digital o piezas comerciales, escribime.</p>
             
             <div class="footer-actions">
-                <button id="copyEmailBtn" class="btn-main-contact">
-                    eteresmeralda@gmail.com
-                </button>
-                <a href="https://instagram.com/memedemitrio" target="_blank" rel="noopener noreferrer" class="btn-social">
-                    @memedemitrio
-                </a>
+                <a href="mailto:eteresmeralda@gmail.com" class="btn-main-contact">CONTACTAR ↗</a>
+            </div>
+            
+            <div class="footer-bottom">
+                <span class="footer-brand">ESMERALDA DEMITRIO <span class="accent-text">EDITORA AUDIOVISUAL</span></span>
+                <div class="footer-socials">
+                    <a href="mailto:eteresmeralda@gmail.com" class="social-link">Correo</a>
+                    <a href="https://instagram.com/memedemitrio" target="_blank" rel="noopener noreferrer" class="social-link">Instagram</a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="social-link">LinkedIn</a>
+                </div>
+                <span class="footer-copyright">© 2026 Esmeralda Demitrio</span>
             </div>
         </footer>
+
     </div>
 
     <!-- TOAST FEEDBACK -->

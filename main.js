@@ -92,7 +92,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const videoId = this.getAttribute('data-video-id');
             if (!videoId) return;
 
-            this.innerHTML = `<iframe class="yt-iframe" src="https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`; 
+            this.innerHTML = `<iframe class="yt-iframe" src="https://www.youtube.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`; 
             this.classList.remove('yt-card');
             this.style.transform = 'none';
         });
@@ -203,3 +203,40 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
 });
+
+
+    
+
+/* =========================================
+   CARRUSEL 3D HERO
+   ========================================= */
+const cards = document.querySelectorAll('.card-3d');
+if (cards.length > 0) {
+    let current = 0;
+
+    function updateCards() {
+        cards.forEach((card, i) => {
+            card.classList.remove('is-active', 'is-prev', 'is-next');
+            if (i === current) {
+                card.classList.add('is-active');
+            } else if (i === (current - 1 + cards.length) % cards.length) {
+                card.classList.add('is-prev');
+            } else {
+                card.classList.add('is-next');
+            }
+        });
+    }
+
+    cards.forEach((card, idx) => {
+        card.addEventListener('click', () => {
+            current = idx;
+            updateCards();
+        });
+    });
+
+    // Rotación automática cada 4.5 segundos
+    setInterval(() => {
+        current = (current + 1) % cards.length;
+        updateCards();
+    }, 4500);
+}
