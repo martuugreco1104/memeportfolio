@@ -106,6 +106,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const heroPreviewVideo = document.getElementById('heroPreviewVideo');
 
     if (previewLabels.length > 0 && heroPreviewVideo) {
+        
+        // Force initial play (Critical for iOS Mobile)
+        heroPreviewVideo.muted = true;
+        heroPreviewVideo.load();
+        const playPromise = heroPreviewVideo.play();
+        if (playPromise !== undefined) {
+            playPromise.catch(error => {
+                console.log("Auto-play prevented on load:", error);
+            });
+        }
+        
         previewLabels.forEach(label => {
             label.addEventListener('click', function() {
                 // Remove active class from all
