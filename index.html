@@ -247,43 +247,37 @@
             </section>
 
             
+            
             <!-- =========================================
-                 SECCIÓN: MEDIOS Y CANALES
+                 SECCIÓN: EXPERIENCIA / CLIENTES
                  ========================================= -->
-            <section id="clientes" class="disruptive-section" style="background-color: var(--bg-hero); padding: 100px 24px; border-bottom: 1px solid rgba(255,255,255,0.05);">
-                <div class="section-header" style="text-align: center; margin-bottom: 60px;">
-                    <h2 class="section-main-title" style="color: #ffffff; font-size: clamp(2rem, 5vw, 3rem);">EXPERIENCIA</h2>
-                    <p style="color: rgba(255,255,255,0.6); font-size: 1.1rem; max-width: 600px; margin: 16px auto 0;">Medios, canales y productoras en las que trabajo y confían en mi edición.</p>
-                </div>
-                
-                <div class="grid-clients" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 32px; max-width: 1100px; margin: 0 auto;">
+            <section id="experiencia" class="clients-section" style="background-color: var(--bg-hero); padding: 100px 24px; border-bottom: 1px solid rgba(255,255,255,0.05);">
+                <div class="clients-container" style="max-width: 1200px; margin: 0 auto; text-align: center;">
                     
-                    <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 24px; padding: 48px 24px; text-align: center; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='rgba(255,255,255,0.06)'" onmouseout="this.style.background='rgba(255,255,255,0.03)'">
-                        <div style="height: 80px; display: flex; align-items: center; justify-content: center; margin-bottom: 24px;">
-                            <img src="assets/logo-luzu-2025.webp" alt="Luzu TV" style="max-height: 100%; max-width: 80%; object-fit: contain; filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));">
+                    <h2 class="section-main-title" style="color: #ffffff; margin-bottom: 16px;">EXPERIENCIA</h2>
+                    <p class="clients-eyebrow" style="font-family: monospace; font-size: 0.9rem; font-weight: 700; letter-spacing: 0.1em; color: rgba(255,255,255,0.6); margin-bottom: 60px;">MEDIOS, CANALES Y MARCAS QUE CONFÍAN EN MI TRABAJO</p>
+                    
+                    <div class="clients-logos-track" style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 80px;">
+                        
+                        <div class="client-item">
+                            <img src="assets/logo-luzu-2025.webp" alt="Luzu TV" class="client-logo" style="height: 50px; object-fit: contain; filter: brightness(0) invert(1); opacity: 0.7; transition: all 0.3s ease;" onmouseover="this.style.opacity='1'; this.style.filter='none'" onmouseout="this.style.opacity='0.7'; this.style.filter='brightness(0) invert(1)'">
+                            <span class="client-role" style="display: block; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.15em; color: var(--accent-lime); margin-top: 16px;">STREAMING</span>
                         </div>
-                        <h4 style="color: #fff; font-size: 1.3rem; font-weight: 800; margin: 0; letter-spacing: 0.05em;">LUZU TV</h4>
-                        <p style="color: var(--accent-lime); font-size: 0.9rem; margin-top: 8px; font-weight: 700;">STREAMING</p>
-                    </div>
 
-                    <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 24px; padding: 48px 24px; text-align: center; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='rgba(255,255,255,0.06)'" onmouseout="this.style.background='rgba(255,255,255,0.03)'">
-                        <div style="height: 80px; display: flex; align-items: center; justify-content: center; margin-bottom: 24px;">
-                            <img src="Logos/solo deportes.webp" alt="Solo Deportes" style="height: 80px; width: 80px; object-fit: cover; border-radius: 50%; box-shadow: 0 10px 20px rgba(0,0,0,0.3);">
+                        <div class="client-item">
+                            <img src="Logos/solo deportes.webp" alt="Solo Deportes" class="client-logo" style="height: 64px; width: 64px; border-radius: 50%; object-fit: cover; filter: grayscale(100%); opacity: 0.7; transition: all 0.3s ease;" onmouseover="this.style.opacity='1'; this.style.filter='grayscale(0%)'" onmouseout="this.style.opacity='0.7'; this.style.filter='grayscale(100%)'">
+                            <span class="client-role" style="display: block; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.15em; color: var(--accent-lime); margin-top: 16px;">COBERTURA</span>
                         </div>
-                        <h4 style="color: #fff; font-size: 1.3rem; font-weight: 800; margin: 0; letter-spacing: 0.05em;">SOLO DEPORTES</h4>
-                        <p style="color: var(--accent-lime); font-size: 0.9rem; margin-top: 8px; font-weight: 700;">COBERTURA</p>
-                    </div>
 
-                    <div style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); border-radius: 24px; padding: 48px 24px; text-align: center; transition: all 0.3s ease; cursor: default;" onmouseover="this.style.background='rgba(255,255,255,0.06)'" onmouseout="this.style.background='rgba(255,255,255,0.03)'">
-                        <div style="height: 80px; display: flex; align-items: center; justify-content: center; margin-bottom: 24px;">
-                            <img src="Logos/cervelive.webp" alt="Cervelive" style="height: 80px; width: 80px; object-fit: cover; border-radius: 50%; box-shadow: 0 10px 20px rgba(0,0,0,0.3);">
+                        <div class="client-item">
+                            <img src="Logos/cervelive.webp" alt="CerveLive" class="client-logo" style="height: 64px; width: 64px; border-radius: 50%; object-fit: cover; filter: grayscale(100%); opacity: 0.7; transition: all 0.3s ease;" onmouseover="this.style.opacity='1'; this.style.filter='grayscale(0%)'" onmouseout="this.style.opacity='0.7'; this.style.filter='grayscale(100%)'">
+                            <span class="client-role" style="display: block; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.15em; color: var(--accent-lime); margin-top: 16px;">FORMATOS</span>
                         </div>
-                        <h4 style="color: #fff; font-size: 1.3rem; font-weight: 800; margin: 0; letter-spacing: 0.05em;">CERVELIVE</h4>
-                        <p style="color: var(--accent-lime); font-size: 0.9rem; margin-top: 8px; font-weight: 700;">FORMATOS</p>
-                    </div>
 
+                    </div>
                 </div>
             </section>
+
 
 
         
