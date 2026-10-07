@@ -2017,3 +2017,94 @@ html {
     max-height: 38px !important;
   }
 }
+
+
+/* =========================================
+   HERO MOBILE VIDEO-FIRST REFACTOR
+   ========================================= */
+@media (max-width: 768px) {
+  /* Contenedor del Hero compacto */
+  .hero-split {
+    padding-top: 90px !important; /* Espacio justo para el navbar */
+    padding-bottom: 24px !important;
+    min-height: auto !important;
+  }
+  
+  .hero-grid-split {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    gap: 12px !important;
+  }
+
+  /* Nombre y títulos compactos */
+  .hero-brand-title {
+    margin: 0 !important;
+    line-height: 1.05 !important;
+  }
+
+  .brand-first {
+    font-size: 2.2rem !important;
+    font-weight: 900 !important;
+    letter-spacing: -0.02em !important;
+  }
+
+  .brand-last {
+    font-size: 1.7rem !important;
+    margin-top: 2px !important;
+    line-height: 1 !important;
+  }
+
+  .hero-role-tag {
+    font-size: 0.72rem !important;
+    letter-spacing: 0.1em !important;
+    margin: 4px 0 8px 0 !important;
+    opacity: 0.85 !important;
+  }
+
+  /* Ocultar la bajada larga en mobile o dejarla en una sola línea */
+  .hero-context {
+    display: none !important; /* Libera espacio vital para que suba el video */
+  }
+
+  /* Eliminar botones duplicados: en el hero solo dejamos un botón sutil */
+  .hero-actions {
+    display: flex !important;
+    flex-direction: row !important;
+    justify-content: center !important;
+    gap: 10px !important;
+    margin: 6px 0 16px 0 !important;
+  }
+
+  /* Ocultamos el botón naranja repetido porque ya está en el navbar flotante */
+  .hero-actions .btn-primary {
+    display: none !important; 
+  }
+
+  .hero-actions .btn-secondary {
+    padding: 8px 24px !important;
+    font-size: 0.8rem !important;
+    width: auto !important;
+  }
+
+  /* El Video Mockup pasa a estar INMEDIATAMENTE visible */
+  .hero-3d-stage {
+    width: 100% !important;
+    max-width: 250px !important;
+    height: 400px !important;
+    margin: 0 auto !important;
+    position: relative !important;
+    transform: none !important;
+  }
+
+  .carousel-3d-track {
+    width: 180px !important;
+    height: 360px !important;
+  }
+
+  .card-3d.is-active {
+    border-radius: 20px !important;
+    box-shadow: 0 16px 36px rgba(0, 0, 0, 0.5) !important;
+  }
+}
