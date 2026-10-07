@@ -2108,3 +2108,94 @@ html {
     box-shadow: 0 16px 36px rgba(0, 0, 0, 0.5) !important;
   }
 }
+
+
+/* =========================================
+   UX/UI PIXEL PERFECT AUDIT (LEAD DESIGNER)
+   ========================================= */
+
+/* 1. SISTEMA ESPACIAL & SECCIONES (8PT GRID) */
+.portfolio-section, .about-section, .services-section, .disruptive-section {
+    padding: 96px 24px !important;
+    box-sizing: border-box !important;
+}
+
+@media (max-width: 768px) {
+    .portfolio-section, .about-section, .services-section, .disruptive-section {
+        padding: 64px 20px !important;
+    }
+}
+
+/* 2. JERARQUÍA TIPOGRÁFICA Y GESTALT */
+/* Colores y lectura */
+p, .section-subtitle, .project-description, .exp-desc, .about-section ul li span {
+    line-height: 1.55 !important;
+    max-width: 65ch !important;
+    color: #4A5851 !important; 
+}
+h1, h2, h3, .section-main-title, .project-title, .exp-name {
+    color: #0F3B27 !important;
+}
+
+/* Excepciones para secciones oscuras */
+.clients-section h2, .clients-section p, .clients-section h4 {
+    color: #ffffff !important;
+}
+.clients-section .clients-eyebrow, .clients-section .client-role {
+    color: var(--accent-lime) !important;
+}
+.clients-section p.section-subtitle {
+    color: rgba(255,255,255,0.7) !important;
+}
+
+/* Ley de Proximidad */
+.project-header, .section-intro {
+    margin-bottom: 24px !important;
+}
+.project-number, .project-category, .exp-badge {
+    margin-bottom: 8px !important;
+}
+.project-titles, .project-title {
+    margin-bottom: 12px !important;
+}
+.grid-vertical-videos, .double-project-container {
+    margin-top: 24px !important;
+}
+
+/* 3. ACCESIBILIDAD, TOUCH TARGETS Y FEEDBACK */
+.btn-primary, .btn-secondary, .nav-btn, .interactive-card, .exp-card, .service-card {
+    transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1), opacity 0.2s ease, box-shadow 0.2s ease !important;
+}
+.btn-primary, .btn-secondary, .nav-btn {
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-primary:hover, .btn-secondary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* 4. CONTENCIÓN VISUAL Y BORDES */
+.interactive-card, .video-container, .card-3d, .card-video {
+    border-radius: 24px !important;
+    background-color: #0A1C13 !important;
+}
+@media (max-width: 768px) {
+    .interactive-card, .video-container, .card-3d, .card-video {
+        border-radius: 20px !important;
+    }
+}
+.btn-primary, .btn-secondary, .exp-badge, .nav-btn, .project-number, .project-category {
+    border-radius: 9999px !important;
+}
+.exp-card, .service-card {
+    border-radius: 16px !important;
+}
+
+/* 5. RENDIMIENTO PERCIBIDO (UX VIDEO) */
+video {
+    background-color: #0A1C13 !important; /* Evita destellos blancos durante la carga */
+    border-radius: inherit;
+}
