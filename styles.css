@@ -2563,3 +2563,51 @@ video {
     50% { transform: translateY(4px); }
   }
 }
+
+
+/* =========================================
+   FINAL POLISH (CAPSULE, BULLETS, ABOUT MOBILE)
+   ========================================= */
+
+/* 1. HERO CAPSULE EN DESKTOP (Restaurar y estilizar) */
+.mobile-only-capsule {
+    display: inline-flex !important; /* Forzar visible en desktop tmb */
+    align-items: center;
+    gap: 8px;
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-family: monospace;
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: rgba(255,255,255,0.9);
+    letter-spacing: 0.05em;
+    backdrop-filter: blur(4px);
+    margin-bottom: 24px !important;
+}
+
+/* 2. ALINEACIÓN DE VIÑETAS (SOBRE MÍ) */
+.about-section ul li {
+    display: flex !important;
+    align-items: flex-start !important;
+}
+.about-section ul li > span:first-child {
+    font-size: 1.5rem !important;
+    line-height: 1 !important;
+    margin-top: 2px !important; /* Baja la viñeta para que alinee con el centro de la primera línea de texto */
+    transform: translateY(2px);
+}
+.about-section ul li > span:last-child {
+    line-height: 1.55 !important;
+}
+
+/* 3. FIX PASTILLA "DISPONIBLE" EN MOBILE (Evitar que se ponga al lado de la foto) */
+@media (max-width: 768px) {
+    .about-grid-2col > div:last-child {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100% !important;
+    }
+}
