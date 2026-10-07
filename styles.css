@@ -2611,3 +2611,43 @@ video {
         width: 100% !important;
     }
 }
+
+
+/* =========================================
+   SENIOR UI: HERO MOBILE VERTICAL CENTERING
+   ========================================= */
+
+@media (max-width: 768px) {
+  .hero-split {
+    /* Balance espacial: limpiar padding superior excesivo */
+    padding-top: 64px !important; 
+    padding-bottom: 64px !important; /* Padding simétrico ayuda al centrado flex */
+    min-height: 100dvh !important;
+    
+    /* Centrado absoluto */
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important; 
+  }
+
+  .hero-grid-split {
+    /* Aseguramos que no haya márgenes fantasma */
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    padding-top: 0 !important;
+    
+    /* Agrupamos como un bloque sólido */
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    justify-content: center !important;
+    gap: 16px !important;
+    width: 100% !important;
+  }
+
+  .mobile-only-capsule {
+    margin-top: 0 !important;
+    /* Ajuste fino de proximidad al título */
+    margin-bottom: 16px !important;
+  }
+}
