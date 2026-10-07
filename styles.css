@@ -2199,3 +2199,86 @@ video {
     background-color: #0A1C13 !important; /* Evita destellos blancos durante la carga */
     border-radius: inherit;
 }
+
+
+/* =========================================
+   FIX COLORES OSCUROS Y MOBILE HERO
+   ========================================= */
+
+/* Restaurar contraste en secciones oscuras (Hero y Footer) */
+.hero-split p, 
+.hero-context,
+.footer-block h2, 
+.footer-block p, 
+.footer-title, 
+.footer-subtitle {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+
+/* Restaurar la bajada del hero en mobile y centrar todo perfecto */
+@media (max-width: 768px) {
+    .hero-split {
+        padding-top: 100px !important;
+        padding-bottom: 40px !important;
+    }
+    
+    .hero-grid-split {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        text-align: center !important;
+        justify-content: center !important;
+        gap: 16px !important;
+        width: 100% !important;
+    }
+
+    /* Títulos bien centrados y legibles */
+    .hero-brand-title {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        margin-bottom: 8px !important;
+    }
+    
+    .brand-first {
+        display: block !important;
+        font-size: clamp(2.8rem, 12vw, 4rem) !important;
+        text-align: center !important;
+    }
+    
+    .brand-last {
+        display: block !important;
+        font-size: clamp(1.8rem, 8vw, 2.5rem) !important;
+        text-align: center !important;
+        margin-top: 0 !important;
+    }
+
+    .hero-role-tag {
+        font-size: 0.85rem !important;
+        text-align: center !important;
+        margin-bottom: 16px !important;
+    }
+
+    /* Mostrar de nuevo el contexto y centrarlo */
+    .hero-context {
+        display: block !important;
+        text-align: center !important;
+        font-size: 1rem !important;
+        line-height: 1.5 !important;
+        margin: 0 auto 24px auto !important;
+        max-width: 90% !important;
+    }
+
+    /* Botones centrados */
+    .hero-actions {
+        display: flex !important;
+        justify-content: center !important;
+        width: 100% !important;
+    }
+
+    /* Carrusel 3D bien posicionado */
+    .hero-3d-stage {
+        margin-top: 24px !important;
+        transform: scale(0.95) !important;
+    }
+}
