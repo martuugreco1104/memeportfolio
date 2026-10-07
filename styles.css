@@ -2651,3 +2651,17 @@ video {
     margin-bottom: 16px !important;
   }
 }
+
+
+/* =========================================
+   QA & UX FINAL POLISH (MUNDIAL YOUTUBE GRID)
+   ========================================= */
+
+@media (max-width: 768px) {
+    /* Prevenir desborde horizontal en celulares pequeños (iPhone SE / 320px) 
+       causado por el minmax(300px) de los iframes de YouTube */
+    .project-media {
+        grid-template-columns: 1fr !important;
+        gap: 16px !important;
+    }
+}
