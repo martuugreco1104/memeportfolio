@@ -1911,3 +1911,109 @@ html {
         gap: 24px !important;
     }
 }
+
+
+/* =========================================
+   URGENT MOBILE FIXES (TEXT OVERFLOW & SWIPE)
+   ========================================= */
+
+@media (max-width: 768px) {
+  /* 1. REGLA GLOBAL DE CONTENCIÓN */
+  html, body {
+    overflow-x: hidden !important;
+    width: 100% !important;
+  }
+
+  section, 
+  .site-container, 
+  .section-header, 
+  .project-showcase,
+  .about-section,
+  .portfolio-section,
+  .services-section {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    box-sizing: border-box !important;
+  }
+
+  /* Ajuste de títulos para que no desborden */
+  .section-main-title, 
+  h2, 
+  .project-title {
+    font-size: clamp(1.8rem, 7vw, 2.3rem) !important;
+    line-height: 1.15 !important;
+    word-break: break-word !important;
+    white-space: normal !important;
+  }
+
+  .section-subtitle, 
+  .project-description, 
+  p {
+    font-size: 0.95rem !important;
+    line-height: 1.45 !important;
+    max-width: 100% !important;
+    word-break: break-word !important;
+  }
+
+  /* 2. SCROLL HORIZONTAL NATIVO EN MOCKUPS Y VIDEOS */
+  .grid-vertical-videos {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    scroll-snap-type: x mandatory !important;
+    -webkit-overflow-scrolling: touch !important; /* Esencial para iOS Safari */
+    gap: 16px !important;
+    padding: 16px 20px 24px 20px !important;
+    margin-left: -20px !important;
+    margin-right: -20px !important;
+    width: calc(100% + 40px) !important;
+    scrollbar-width: none !important; /* Firefox */
+  }
+
+  .grid-vertical-videos::-webkit-scrollbar {
+    display: none !important; /* Chrome/Safari */
+  }
+
+  /* Cada tarjeta de video individual dentro del carrusel */
+  .grid-vertical-videos .interactive-card {
+    flex: 0 0 78vw !important; /* Ocupa el 78% de la pantalla para invitar al swipe */
+    max-width: 290px !important;
+    scroll-snap-align: center !important;
+    scroll-snap-stop: always !important;
+    margin: 0 !important;
+  }
+
+  .interactive-card video {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+  }
+
+  /* 3. AJUSTE DE LA SECCIÓN EXPERIENCIA EN MOBILE */
+  .experience-grid {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+    width: 100% !important;
+    padding: 0 !important;
+  }
+
+  .exp-card {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    padding: 24px 20px !important;
+  }
+
+  .exp-logo-wrap {
+    height: 44px !important;
+    margin-bottom: 16px !important;
+  }
+
+  .exp-logo-wrap img {
+    max-height: 38px !important;
+  }
+}
